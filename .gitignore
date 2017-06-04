@@ -1,0 +1,11 @@
+Icon*
+*.log
+*.pyc
+*.swp
+*.hg
+.hg/*
+.idea/*
+*.ipynb_checkpoints
+.idea/
+logs/
+.vscode/

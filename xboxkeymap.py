@@ -3,26 +3,74 @@ import time
 from directkeys import PressKey, ReleaseKey
 
 
+options = dk.V
+RJoyPress = dk.C
+pause = dk.B
+
+
+LJoyPress = dk.LSHIFT
+
+def pressLJoyPress(delay=0.15):
+    PressKey(LJoyPress)
+    time.sleep(delay)
+    ReleaseKey(LJoyPress)
+
 LJoyUp = dk.W
-LJpyLeft = dk.A
+LJoyLeft = dk.A
 LJoyDown = dk.S
 LJoyRight = dk.D
+
+def pressLJoyUp(delay=0.15):
+    PressKey(LJoyUp)
+    time.sleep(delay)
+    ReleaseKey(LJoyUp)
+
+def pressLJoyLeft(delay=0.15):
+    PressKey(LJoyLeft)
+    time.sleep(delay)
+    ReleaseKey(LJoyLeft)
+
+def pressLJoyDown(delay=0.15):
+    PressKey(LJoyDown)
+    time.sleep(delay)
+    ReleaseKey(LJoyDown)
+
+def pressLJoyRight(delay=0.15):
+    PressKey(LJoyRight)
+    time.sleep(delay)
+    ReleaseKey(LJoyRight)
+
+LeftArrow = dk.LEFT
+RightArrow  = dk.RIGHT
+UpArrow = dk.UP
+DownArrow = dk.DOWN
+
+def pressLeftArrow(delay=0.15):
+    PressKey(LeftArrow)
+    time.sleep(delay)
+    ReleaseKey(LeftArrow)
+
+def pressRightArrow(delay=0.15):
+    PressKey(RightArrow)
+    time.sleep(delay)
+    ReleaseKey(RightArrow)
+
+def pressUpArrow(delay=0.15):
+    PressKey(UpArrow)
+    time.sleep(delay)
+    ReleaseKey(UpArrow)
+
+def pressDownArrow(delay=0.15):
+    PressKey(DownArrow)
+    time.sleep(delay)
+    ReleaseKey(DownArrow)
+
 
 
 A = dk.SPACE
 B = dk.LCONTROL
 Y = dk.KEY_1
 X = dk.R
-
-options = dk.V
-RJoyPress = dk.C
-pause = dk.B 
-LJoyPress = dk.LSHIFT
-
-ArrowLeft = dk.LEFT
-ArrowRight  = dk.RIGHT
-ArrowUp = dk.UP
-ArrowDown = dk.DOWN
 
 def pressA(delay=0.15):
     PressKey(A)
