@@ -1,6 +1,6 @@
 # Python playing Tekken 7
 
-This is a shy less copy of the idea, making [python play a GTA V](https://github.com/Sentdex/pygta5)
+This is a shy less copy of the idea, making [python play GTA V](https://github.com/Sentdex/pygta5)
 
 Currently, the algorithm is dumb. It just throws some blind punches and kicks
 
