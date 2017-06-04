@@ -1,4 +1,4 @@
-import xboxkeymap as xbox
+# import xboxkeymap as xbox
 import logger
 
 app_logger = logger.getLogger(printToScreen=True)
@@ -6,41 +6,41 @@ app_logger = logger.getLogger(printToScreen=True)
 class Fighter:
     def __init__(self, name):
         self.Name = name
-        app_logger.debug( "Fighter initialzed %s", self._getLogCtx())
+        app_logger.info( "Fighter initialzed %s", self._getLogCtx())
 
     def _getLogCtx(self):
         return {"Name": self.Name}
 
     def leftPunch(self):
-        xbox.pressX()
+        # xbox.pressX()
         app_logger.info( self._getLogCtx())
 
     def rightPunch(self):
-        xbox.pressY()
+        # xbox.pressY()
         app_logger.info( self._getLogCtx())
 
     def leftKick(self):
-        xbox.pressA()
+        # xbox.pressA()
         app_logger.info( self._getLogCtx())
     
     def rightKick(self):
-        xbox.pressB()
+        # xbox.pressB()
         app_logger.info( self._getLogCtx())
 
     def jump(self):
-        xbox.pressLJoyUp()
+        # xbox.pressLJoyUp()
         app_logger.info( self._getLogCtx())
     
     def crouch(self):
-        xbox.pressLJoyDown()
+        # xbox.pressLJoyDown()
         app_logger.info( self._getLogCtx())
 
     def moveFront(self):
-        xbox.pressLJoyRight()
+        # xbox.pressLJoyRight()
         app_logger.info( self._getLogCtx())
 
     def moveBack(self):
-        xbox.pressLJoyLeft()
+        # xbox.pressLJoyLeft()
         app_logger.info( self._getLogCtx())
 
 def action():
